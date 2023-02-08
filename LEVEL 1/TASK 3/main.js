@@ -10,19 +10,6 @@ var emoji = document.querySelector("#icon");
             display.innerHTML = F.toFixed(4) + " F"
             document.getElementById("result").innerHTML = "Fahernheit";
             document.getElementById("up").innerHTML = "Celcius";
-            if (F < 32) {
-                emoji.style = "color:blue"
-                emoji.className = "fa-solid fa-face-grimace"
-                par.innerHTML = "Cool at frezing point"
-            } else if (F > 122) {
-                emoji.style = "color:red"
-                emoji.className = "fa-solid fa-face-dizzy"
-                par.innerHTML = "So Warm"
-            } else {
-                emoji.className = "fa-solid fa-face-grin"
-                par.innerHTML = ""
-                emoji.style = "color:rgb(253, 174, 37)"
-            }
 
         } else {
             console.log(a, "F to C", opt.value)
@@ -30,15 +17,5 @@ var emoji = document.querySelector("#icon");
             display.innerHTML = C.toFixed(4) + " ºC"
             document.getElementById("result").innerHTML = "Celcius";
             document.getElementById("up").innerHTML = "Fahernheit";
-            if (C < 0) {
-                emoji.className = "fa-solid fa-face-grimace"
-                par.innerHTML = "Cool at frezing point"
-            } else if (C > 50) {
-                emoji.className = "fa-solid fa-face-dizzy"
-                par.innerHTML = "So Warm"
-            } else {
-                par.innerHTML = ""
-                emoji.style = "color:rgb(253, 174, 37)"
-            }
         }
     }
