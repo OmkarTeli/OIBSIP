@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./l2task3/public/intern.css">
+
+    <link rel="shortcut icon" href="img/icon.jpg" type="image/png">
+    <title>Temperature</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="hed">Temperature converter</div>
+        <div class="emoji">
+            <i id="icon" class="fa-solid fa-face-grin"></i>
+            <p id="par"></p>
+        </div>
+        <div class="boxcontainer">
+            <div class="box1">
+                <p id="up">Degree</p>
+                <input type="number" class="takval" />
+            </div>
+            <div class="box1">
+                <p>Type</p>
+                <select name="" id="unit">   
+                     <option value="Fahrenheit">Fahrenheit</option>
+                     <option value="Celsius">Celsius</option>  
+                </select>
+            </div>
+        </div>
+        <div class="valuecontainer">
+            <p id="result">Result</p>
+            <div class="value"></div>
+        </div>
+        <button onclick="temperature()" class="button"><p>Convert</p></button>
+    </div>
+</body>
+</html>
